@@ -31,29 +31,38 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
-
+  assets:
+    - Assets/images/starwars.jpg
+    - Assets/images/starwars1.jpg
+    - Assets/images/netflix.png
+    - Assets/images/1.jpg
+    - Assets/images/2.jpg
+    - Assets/images/3.jpg
+    - Assets/images/4.jpg
+    - Assets/images/5.jpg
+    - Assets/images/6.jpg
+    - Assets/images/7.jpg
+    - Assets/images/8.jpg
+    - Assets/images/9.jpg
+    - Assets/images/10.jpg
+    - Assets/images/11.jpg
+    - Assets/images/12.jpg
+    - Assets/images/birdboxBanner.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
