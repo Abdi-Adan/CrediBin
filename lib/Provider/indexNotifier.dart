@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 
-class IndexNotifier with ChangeNotifier {
-  int _index = 0;
+// class IndexNotifier with ChangeNotifier {
+//   int _index = 0;
 
-  int get index => _index;
+//   int get index => _index;
 
-  set index(int newIndex) {
-    _index = newIndex;
-    notifyListeners();
-  }
-}
+//   set index(int newIndex) {
+//     _index = newIndex;
+//     notifyListeners();
+//   }
+// }
