@@ -3,7 +3,6 @@ import 'package:credi_bin/Initialize/SignIn.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-
 class SplashPage extends StatefulWidget {
   @override
   _SplashPageState createState() => _SplashPageState();
@@ -28,7 +27,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
     super.initState();
 
     _scaleController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+        AnimationController(vsync: this, duration: Duration(milliseconds: 200));
 
     _scaleAnimation =
         Tween<double>(begin: 1.0, end: 0.8).animate(_scaleController)
@@ -39,7 +38,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
           });
 
     _widthController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 600));
+        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
 
     _widthAnimation =
         Tween<double>(begin: 80.0, end: 300.0).animate(_widthController)
@@ -49,8 +48,8 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
             }
           });
 
-    _positionController = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1000));
+    _positionController =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 100));
 
     _positionAnimation =
         Tween<double>(begin: 0.0, end: 215.0).animate(_positionController)
@@ -64,18 +63,16 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
           });
 
     _scale2Controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+        AnimationController(vsync: this, duration: Duration(milliseconds: 100));
 
-    _scale2Animation =
-        Tween<double>(begin: 1.0, end: 32.0).animate(_scale2Controller)
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed) {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.fade, child: SignUp()));
-            }
-          });
+    _scale2Animation = Tween<double>(begin: 1.0, end: 32.0).animate(
+        _scale2Controller)
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          Navigator.push(context,
+              PageTransition(type: PageTransitionType.fade, child: SignUp()));
+        }
+      });
   }
 
   @override
@@ -172,7 +169,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
                                   padding: EdgeInsets.all(10),
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(50),
-                                      color: Colors.blue.withOpacity(.4)),
+                                      color: Colors.green.withOpacity(.4)),
                                   child: InkWell(
                                     onTap: () {
                                       _scaleController.forward();
@@ -194,7 +191,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
                                                       decoration: BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
-                                                          color: Colors.blue),
+                                                          color: Colors.green),
                                                       child: hideIcon == false
                                                           ? Icon(
                                                               Icons

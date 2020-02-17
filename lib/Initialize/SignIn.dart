@@ -1,4 +1,5 @@
-import 'package:credi_bin/Initialize/LoginPage.dart';
+// import 'package:credi_bin/Initialize/LoginPage.dart';
+import 'package:credi_bin/Initialize/teddy.dart';
 import 'package:credi_bin/Screens/HomePage.dart';
 import 'package:flutter/material.dart';
 
@@ -35,10 +36,10 @@ class _SignUpState extends State<SignUp> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => LoginPage()),
+                  MaterialPageRoute(builder: (context) => TeddyScreen()),
                 );
               },
-              highlightColor: Colors.red,
+              highlightColor: Colors.greenAccent,
               shape: StadiumBorder(),
             ),
           ),
@@ -101,10 +102,10 @@ class _SignUpState extends State<SignUp> {
                 child: new RaisedButton(
                   child: new Text("Sign up",
                       style: new TextStyle(color: Colors.white)),
-                  color: Colors.blue,
+                  color: Colors.green,
                   elevation: 15.0,
                   shape: StadiumBorder(),
-                  splashColor: Colors.redAccent,
+                  splashColor: Colors.greenAccent,
                   onPressed: () {
                     Navigator.push(
                         context,
